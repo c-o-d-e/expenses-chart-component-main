@@ -36,7 +36,7 @@ body {
 }
 
 .balance {
-    background-color: hsl(28, 82%, 50%);
+    background-color: #ec755d;
     display: flex;
     justify-content: space-between;
     align-items: center;
