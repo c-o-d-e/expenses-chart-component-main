@@ -14,6 +14,7 @@ new Chart("myChart", {
             {
                 backgroundColor: barColors,
                 data: yValues,
+                borderRadius: 5,
                 hoverRadius: 5,
                 hoverBackgroundColor: "#76b5bc",
             },
@@ -21,28 +22,26 @@ new Chart("myChart", {
     },
     options: {
         scales: {
-            xAxes: [
-                {
-                    gridLines: {
-                        display: false,
-                    },
+            x: {
+                grid: {
+                    display: false,
                 },
-            ],
-            yAxes: [
-                {
-                    gridLines: {
-                        display: false,
-                    },
-                    ticks: {
-                        display: false,
-                    },
+            },
+            y: {
+                grid: {
+                    display: false,
                 },
-            ],
+                ticks: {
+                    display: false,
+                },
+            },
         },
-        legend: { display: false },
-        title: {
-            display: false,
-            text: "Spending - Last 7 days",
+        plugins: {
+            legend: { display: false },
+            title: {
+                display: false,
+                text: "Spending - Last 7 days",
+            },
         },
     },
 });
