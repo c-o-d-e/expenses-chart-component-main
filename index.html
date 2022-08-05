@@ -34,7 +34,9 @@
                 <div class="chart">
                     <div class="chart-wrapper">
                         <h4>Spending - Last 7 days</h4>
-                        <div class="bar-chart">CHART</div>
+                        <div class="bar-chart">
+                            <canvas id="myChart"></canvas>
+                        </div>
                         <div class="line"><hr /></div>
                         <div class="chart-bottom">
                             <div class="total">
@@ -50,5 +52,8 @@
                 </div>
             </div>
         </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script type="module" src="./chart.js"></script>
     </body>
 </html>
