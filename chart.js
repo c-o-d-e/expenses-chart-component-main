@@ -4,7 +4,7 @@ var xValues = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 var yValues = dataJson.map(obj => {
     return obj.amount;
 });
-var barColors = "orange";
+var barColors = "#ec755d";
 
 new Chart("myChart", {
     type: "bar",
@@ -14,6 +14,8 @@ new Chart("myChart", {
             {
                 backgroundColor: barColors,
                 data: yValues,
+                hoverRadius: 5,
+                hoverBackgroundColor: "#76b5bc",
             },
         ],
     },
