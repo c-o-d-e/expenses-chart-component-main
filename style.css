@@ -8,6 +8,7 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 .container {
@@ -36,12 +37,96 @@ body {
 
 .balance {
     background-color: hsl(28, 82%, 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     height: 20%;
+}
+
+.balance-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    margin-left: 1rem;
+    width: 20%;
+    height: 55%;
+}
+
+.balance-elements h6,
+.chart-bottom h6 {
+    opacity: 0.6;
+}
+
+hr {
+    opacity: 0.2;
+}
+
+.balance-elements h4 {
+    font-size: 1.5rem;
+}
+
+.logo {
+    margin-right: 1rem;
+}
+
+.logo img {
+    width: 80%;
 }
 
 .chart {
     background-color: white;
     width: 100%;
     height: 75%;
+    display: flex;
+}
+
+.chart-wrapper {
+    display: flex;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+}
+
+.chart-wrapper h4 {
+    flex-basis: 15%;
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    color: rgb(67, 62, 62);
+}
+
+.bar-chart {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    flex-basis: 5%;
+}
+
+.chart-bottom {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+}
+
+.percentage-change {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 70%;
 }
