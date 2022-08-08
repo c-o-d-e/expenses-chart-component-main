@@ -1,3 +1,5 @@
+/* General styling for desktop */
+
 * {
     margin: 0;
     padding: 0;
@@ -129,4 +131,77 @@ hr {
     justify-content: flex-end;
     align-items: flex-end;
     height: 70%;
+}
+
+/* Tablets general styling */
+
+@media screen and (max-width: 840px) {
+    .main-wrapper {
+        width: 70%;
+    }
+}
+
+/* Phone styling portrait */
+
+@media screen and (max-width: 420px) {
+    .container {
+        width: 100%;
+        height: 80%;
+    }
+    .main-wrapper {
+        width: 90%;
+        height: 85%;
+    }
+
+    .balance-elements h6 {
+        width: 150%;
+        font-size: 1.2rem;
+        opacity: 0.8;
+        font-weight: 100;
+    }
+
+    .chart-wrapper h4 {
+        font-size: 1.6rem;
+    }
+
+    h6 {
+        font-size: 1.1rem;
+        font-weight: 200;
+    }
+}
+
+/* Phone screen orientation landscape  */
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    .container {
+        width: 90%;
+        height: 65%;
+    }
+    .main-wrapper {
+        width: 70%;
+        height: 90%;
+    }
+
+    .balance-elements {
+        flex-direction: row;
+        width: 40%;
+    }
+
+    .balance-elements h6 {
+        width: 150%;
+        font-size: 1.2rem;
+        opacity: 1;
+        font-weight: 100;
+    }
+
+    .chart-wrapper h4 {
+        font-size: 1.4rem;
+        justify-content: center;
+        margin-top: 2rem;
+    }
 }
