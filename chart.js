@@ -6,6 +6,18 @@ var yValues = dataJson.map(obj => {
 });
 var barColors = "#ec755d";
 
+const tooltip = {
+    displayColors: false,
+    callbacks: {
+        label: function (context) {
+            return yValues[xValues.indexOf(context.label)];
+        },
+        title: function (context) {
+            return;
+        },
+    },
+};
+
 new Chart("myChart", {
     type: "bar",
     data: {
@@ -26,7 +38,7 @@ new Chart("myChart", {
             event.native.target.style.cursor =
                 chartElement.length == 1 ? "pointer" : "default";
         },
-
+        tooltip,
         scales: {
             x: {
                 grid: {
@@ -43,6 +55,7 @@ new Chart("myChart", {
             },
         },
         plugins: {
+            tooltip,
             legend: { display: false },
             title: {
                 display: false,
