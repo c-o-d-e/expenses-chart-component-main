@@ -21,6 +21,12 @@ new Chart("myChart", {
         ],
     },
     options: {
+        // Changes the mouse cursor to a pointer
+        onHover: (event, chartElement) => {
+            event.native.target.style.cursor =
+                chartElement.length == 1 ? "pointer" : "default";
+        },
+
         scales: {
             x: {
                 grid: {
